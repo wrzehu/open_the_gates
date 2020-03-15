@@ -1,0 +1,55 @@
+Open The Gates:
+    -This project open the gates contains three packages named as chapters. It was made for school project.
+
+Prerequisites:
+    This project don't demand installing any additional  software or lib it use base python libs on Python 3.6.9.
+
+Description:
+    chapter_one package -> contains Car class and Vehicle class in vehicle class we can find subclasses such as Bicycle,
+    Trucks, Cars, and Workshop
+
+    chapter_two package -> contains helpers methods and classes to build task_schedule.py which TUI/CLI for organization of
+    daily  tasks
+
+    chapter_three package -> contains file password.py which provides length of list of number meetings precise conditions
+    given in project.
+    Package also have file test_password.py with unittests to control meeting condition cryteria  by program.
+
+
+Usage:
+        Chapter_one:
+
+        ->Car(pax_count, car_mass, gear_count) class. arguments pax_count and car_mass have validation to don't cross
+        seted values.
+        ->Vehicles(num_of_wheels) class provides abstract method repair() which have to be implemented by subclasses
+        and prints out what you repair and how many wheels have this vehicle
+
+        Chapter_two:
+
+        ->table.py provides static method table_creator_from_dictionary(dict, title_dict = {'Hash Value': ['Name', 'Datetime', 'Description']} )
+        takes dictionary and print out cells with values from dictionary. Dictionary should have structure key : some_list.
+        You can also provide title_dictionary to provide custom table names.
+
+        ->data_etl.py provides class DataDictStorage which provides methods to save and read, dictionary from location of text_storage.txt.
+        Other methods like add_data(lsit) add data to dictionary by providing list of values index is given automaticly.
+        delete_data(key) remove row from dict by provide key value
+        get_all() returns data from text_storage
+        load_dict_from_file() and save_dict_to_file() provides soring of the data in text_file
+
+        ->task.py it is collection of simple static methods which after providing of text values in terminal starts methods
+        from files data_etl.py and table.py. Most important method is introduction which starts whole program
+
+        -> task_schedule.py runs program
+
+        Chapter_three:
+
+        ->password.py contains three static methods which where use to filter list of elements by them and
+        method find_password() returns list of elements meeting conditions
+
+Authors:
+    Dominik W.
+    First README ever hope not the worst.
+
+License
+    MIT
+
